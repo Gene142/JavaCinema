@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300" prefWidth="500" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.AddScreeningController">
+   <children>
+      <ListView fx:id="listOne" layoutY="78.0" onMouseClicked="#ListOneIndex" prefHeight="191.0" prefWidth="170.0" />
+      <ListView fx:id="listTwo" layoutX="170.0" layoutY="78.0" onMouseClicked="#ListTwoIndex" prefHeight="191.0" prefWidth="170.0" />
+      <ListView fx:id="listThree" layoutX="340.0" layoutY="78.0" onMouseClicked="#ListThreeIndex" prefHeight="191.0" prefWidth="163.0" />
+      <Label layoutX="222.0" layoutY="14.0" prefHeight="17.0" prefWidth="66.0" text="Screening" />
+      <DatePicker fx:id="currentDate" layoutX="288.0" layoutY="38.0" onAction="#updateToDate" />
+      <ComboBox fx:id="cmBoxFilms" editable="true" layoutX="10.0" layoutY="38.0" onKeyPressed="#updateComboBox" onKeyTyped="#updateComboBox" prefWidth="150.0" />
+      <Button fx:id="btnAddScreening" layoutX="201.0" layoutY="269.0" mnemonicParsing="false" onAction="#AddScreening" text="Add Screening" />
+      <Button fx:id="btnViewScreening" layoutX="356.0" layoutY="269.0" mnemonicParsing="false" onAction="#ViewScreening" text="View Screening" />
+      <Button fx:id="btnCancel" layoutX="26.0" layoutY="269.0" mnemonicParsing="false" text="Back" />
+      <Label fx:id="sysMessage" layoutX="170.0" layoutY="43.0" prefHeight="17.0" prefWidth="109.0" />
+   </children>
+</AnchorPane>

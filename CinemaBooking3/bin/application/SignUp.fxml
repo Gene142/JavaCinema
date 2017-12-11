@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="300" prefWidth="500" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.SignUpController">
+   <children>
+      <Label layoutX="56.0" layoutY="118.0" text="E-mail" />
+      <Label layoutX="53.0" layoutY="151.0" text="Password" />
+      <Label layoutX="50.0" layoutY="56.0" text="First Name" />
+      <Label layoutX="50.0" layoutY="88.0" text="Last Name" />
+      <TextField fx:id="txtFirstName" layoutX="217.0" layoutY="51.0" promptText="Enter First Name" />
+      <TextField fx:id="txtLastName" layoutX="217.0" layoutY="83.0" promptText="Enter Last Name" />
+      <TextField fx:id="txtEmail" layoutX="217.0" layoutY="113.0" promptText="Enter e-mail" />
+      <TextField fx:id="txtPassword" layoutX="217.0" layoutY="143.0" promptText="Enter password" />
+      <TextField fx:id="txtConfirm" layoutX="217.0" layoutY="171.0" promptText="Confirm Password" />
+      <Label layoutX="53.0" layoutY="182.0" text="Confirm Password" />
+      <Label layoutX="203.0" layoutY="21.0" prefHeight="17.0" prefWidth="113.0" text="Sign Up" textAlignment="CENTER" />
+      <Button fx:id="btnSignUp" layoutX="399.0" layoutY="259.0" mnemonicParsing="false" onAction="#confirmSignUp" text="Sign Up" />
+      <Button fx:id="btnCancel" layoutX="14.0" layoutY="259.0" mnemonicParsing="false" onAction="#backToLogin" text="Cancel" />
+      <Label fx:id="lblSysMessage" layoutX="126.0" layoutY="220.0" prefHeight="40.0" prefWidth="231.0" />
+   </children>
+</AnchorPane>
